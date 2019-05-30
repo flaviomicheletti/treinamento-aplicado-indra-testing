@@ -4,6 +4,8 @@ Praticar testes unitários só com a memória, sem persistir os dados.
 
 Pense em eventos, alguma ação de desencadeia outra.
 
+Usar as histórias.
+
 
 ### Passo 1
 
