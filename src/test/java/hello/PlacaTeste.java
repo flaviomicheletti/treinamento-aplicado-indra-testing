@@ -10,11 +10,11 @@ public class PlacaTeste {
 	
 	@Test
 	public void ConferirPlacaHabilitada() {
-		assertThat(placa.conferirPlaca(), is(true));
+		assertThat(placa.conferirPlaca("ABC1234"), is(true));
 	}
 	
 	@Test
 	public void ConferirPlacaDesabilitada() {
-		assertThat(placa.conferirPlaca(), is(false));
+		assertThat(placa.conferirPlaca("CBA4321"), is(false));
 	}
 }
