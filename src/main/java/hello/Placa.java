@@ -7,9 +7,17 @@ public class Placa {
     public Placa() {
     }
 
-    List<String> placas = Arrays.asList();
+    List<String> placas = Arrays.asList("ABC1234", "ABC1236");
 
-    public List<String> listaPlacas(){
-        return this.placas;
+    public boolean placaIsValid(String placa){
+        if (placas.contains(placa)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public List<String> getPlacas() {
+        return placas;
     }
 }
