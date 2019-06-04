@@ -22,4 +22,14 @@ public class PlacaTest {
     public void placaIsNotValid(){
         assertThat(placa.placaIsValid("ABC1235"), is(false));
     }
+
+    @Test
+    public void getPlacaStatusActive() {
+        assertThat(placa.getPlacaStatus("ABC1234"), is("Active"));
+    }
+
+    @Test
+    public void getPlacaStatusInactive(){
+        assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
+    }
 }
