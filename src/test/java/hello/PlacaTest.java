@@ -32,5 +32,23 @@ public class PlacaTest {
     public void getPlacaStatusInactive(){
         assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
     }
+<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
+    @Test
+    public void get
+=======
+    
+    @Test
+    public void getTagStatusActive() {
+        assertThat(placa.getTagStatus("ABC1234"), is("Active"));
+    }
+
+    @Test
+    public void getTagStatusInactive(){
+        assertThat(placa.getTagStatus("ABC0000"), is("Inactive"));
+    }
+>>>>>>> 6fd0e7056237aca40f9d41c1971213e734339339
+>>>>>>> palomaslima-master
 }

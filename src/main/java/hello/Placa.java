@@ -2,6 +2,7 @@ package hello;
 
 import java.util.Arrays;
 import java.util.List;
+<<<<<<< HEAD
 import org.json.simple.JSONObject;
 
 public class Placa {
@@ -26,9 +27,32 @@ public class Placa {
 
     public boolean placaIsValid(String placa){
         return this.placas.contains(placa);
+=======
+
+public class Placa {
+	
+    public Placa() {
+    }
+
+    private List<String> placas = Arrays.asList("ABC1234", "Active", "Active", "ABC0000", "Inactive", "Inactive");
+
+    public List<String> getPlacas() {
+        return placas;
+    }
+
+    public boolean placaIsValid(String placa){
+        return placas.contains(placa);
+>>>>>>> 6fd0e7056237aca40f9d41c1971213e734339339
     }
 
     public String getPlacaStatus(String placa) {
         return placas.get(placas.indexOf(placa) + 1);
     }
+<<<<<<< HEAD
+=======
+    
+    public String getTagStatus(String placa) {
+        return placas.get(placas.indexOf(placa) + 2);
+    }
+>>>>>>> 6fd0e7056237aca40f9d41c1971213e734339339
 }
