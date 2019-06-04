@@ -18,6 +18,15 @@ public class CadastroPlaca {
 		this.placa = placa;
 	}
 	
-	
+	public Boolean validarPlaca() {
+		
+		return true;
 
+	}
+	
+	public String statusPlaca () {
+		String status = "ativo" ;
+		
+		return status;
+	}
 }
