@@ -33,6 +33,4 @@ public class PlacaTest {
         assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
     }
 
-    @Test
-    pub
 }
