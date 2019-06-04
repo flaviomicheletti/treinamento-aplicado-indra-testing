@@ -2,14 +2,15 @@ package hello;
 
 public class CadastroPlaca {
 
-	private String placa;
+	
+	private String placa ="abc1234";
 
-	public CadastroPlaca(String placa) {
-		super();
-		this.placa = placa;
+	public CadastroPlaca() {
+	
 	}
 
 	public String getPlaca() {
+		
 		return placa;
 	}
 
