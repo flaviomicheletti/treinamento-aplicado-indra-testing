@@ -8,6 +8,14 @@ public class PlacaTeste {
 
 	Placa placa = new Placa();
 	
+	public void ConsultarPlacaExiste() {
+		assertThat(placa.consultarPlaca("ABC1234"), is(true));
+	}
+	
+	public void ConsultarPlacaNãoExiste() {
+		assertThat(placa.consultarPlaca("CBA4321"), is(false));
+	}
+	
 	@Test
 	public void ConferirPlacaHabilitada() {
 		assertThat(placa.conferirPlaca("ABC1234"), is(true));

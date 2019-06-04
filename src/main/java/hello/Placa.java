@@ -1,16 +1,13 @@
 package hello;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Placa {
 	
+	List<String> placas = Arrays.asList("ABC1234");
 	
-	public boolean conferirPlaca(String placa) {
-		
-		ArrayList<String> placas = new ArrayList();
-		
-		placas.add("ABC1234");
-		
+	public boolean consultarPlaca(String placa) {
 		boolean retorno = false;
 		
 		for(String x : placas) {
@@ -18,8 +15,12 @@ public class Placa {
 				retorno = true;
 			} 
 		}
-		
 		return retorno;
-		
 	}
+	
+	public boolean conferirPlaca(String placa) {
+		return true;
+	}
+	
+	
 }
