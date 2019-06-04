@@ -32,4 +32,9 @@ public class PlacaTest {
     public void getPlacaStatusInactive(){
         assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
     }
+    
+    @Test
+    public void tagIsvalid() {
+    	assertThat(placa.tagIsValid("tag123"),is (true));
+    }
 }
