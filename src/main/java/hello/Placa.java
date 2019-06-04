@@ -5,22 +5,24 @@ import java.util.List;
 
 public class Placa {
 	
-	List<String> placas = Arrays.asList("ABC1234");
-	
-	public boolean consultarPlaca(String placa) {
-		boolean retorno = false;
-		
-		for(String x : placas) {
-			if(x == placa) {
-				retorno = true;
-			} 
-		}
-		return retorno;
-	}
-	
-	public boolean conferirPlaca(String placa) {
-		return true;
-	}
-	
-	
+    public Placa() {
+    }
+
+    private List<String> placas = Arrays.asList("ABC1234", "Active", "Active", "ABC0000", "Inactive", "Inactive");
+
+    public List<String> getPlacas() {
+        return placas;
+    }
+
+    public boolean placaIsValid(String placa){
+        return placas.contains(placa);
+    }
+
+    public String getPlacaStatus(String placa) {
+        return placas.get(placas.indexOf(placa) + 1);
+    }
+    
+    public String getTagStatus(String placa) {
+        return placas.get(placas.indexOf(placa) + 2);
+    }
 }
