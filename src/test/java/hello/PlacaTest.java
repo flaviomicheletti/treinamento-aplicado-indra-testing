@@ -8,18 +8,18 @@ public class PlacaTest {
 
     private Placa placa = new Placa();
 
-    /*@Test
-    public void listHasPlaca(){
+    @Test
+    public void listHasPlaca() {
         assertThat(placa.getPlacas(), hasItem("ABC1234"));
-    }*/
+    }
 
     @Test
-    public void placaIsValid(){
+    public void placaIsValid() {
         assertThat(placa.placaIsValid("ABC1234"), is(true));
     }
 
     @Test
-    public void placaIsNotValid(){
+    public void placaIsNotValid() {
         assertThat(placa.placaIsValid("ABC4321"), is(false));
     }
 
@@ -29,7 +29,7 @@ public class PlacaTest {
     }
 
     @Test
-    public void getPlacaStatusInactive(){
+    public void getPlacaStatusInactive() {
         assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
     }
 
@@ -39,7 +39,8 @@ public class PlacaTest {
     }
 
     @Test
-    public void getTagStatusInactive(){
+    public void getTagStatusInactive() {
         assertThat(placa.getTagStatus("ABC0000"), is(""));
     }
+
 }

@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Placa {
-
     public Placa() {
     }
 
@@ -41,8 +40,8 @@ public class Placa {
 
     public String getTagStatus(String placa) {
 
-        for(Veiculo v :veiculos) {
-            if(v.getPlaca() == placa) {
+        for (Veiculo v : veiculos) {
+            if (v.getPlaca() == placa) {
                 return v.getTag();
             }
         }
