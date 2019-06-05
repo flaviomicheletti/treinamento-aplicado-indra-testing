@@ -1,17 +1,9 @@
 package hello;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Veiculo {
 	private String placa;
 	private String habilitado;
-	private String tag;
-	
-	
-	public Veiculo() {
-		
-	}
+	public String tag;
 	
 	public Veiculo(String placa, String habilitado, String tag) {
 		super();

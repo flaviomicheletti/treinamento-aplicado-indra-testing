@@ -6,12 +6,8 @@ import static org.hamcrest.CoreMatchers.*;
 
 public class PlacaTest {
 
-    private Placa placa = new Placa();
+    private CtrlVeiculo placa = new CtrlVeiculo();
 
-    /*@Test
-    public void listHasPlaca(){
-        assertThat(placa.getPlacas(), hasItem("ABC1234"));
-    }*/
 
     @Test
     public void placaIsValid(){

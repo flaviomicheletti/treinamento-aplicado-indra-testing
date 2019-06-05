@@ -4,20 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Placa {
+public class CtrlVeiculo {
 	
-    public Placa() {
+    public CtrlVeiculo() {
     }
     
     List<Veiculo> veiculos = Arrays.asList(new Veiculo("ABC1234", "Active", "123"), new Veiculo("ABC0000", "Inactive", "") );
-
-    /*public String getPlacas() {
-    	String retorno = "";
-        for(Veiculo v : veiculos) {
-        	retorno += v.getPlaca();
-        }
-        return retorno;
-    }*/
 
     public boolean placaIsValid(String placa){
     	
