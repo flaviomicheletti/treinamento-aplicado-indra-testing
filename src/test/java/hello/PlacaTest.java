@@ -8,21 +8,6 @@ public class PlacaTest {
 
     private CtrlVeiculo placa = new CtrlVeiculo();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    /*@Test
-    public void listHasPlaca(){
-        assertThat(placa.getPlacas(), hasItem("ABC1234"));
-    }*/
-=======
-    @Test
-    public void listHasPlaca(){
-        assertThat(placa.getPlacas(), hasItem("ABC1234"));
-    }
->>>>>>> 0c7ce685e043eed7ab70a9f393b863cf9d3a9c07
->>>>>>> 04fd6ffba84a630ad6c401c1ed9e27708d0d3807
-
     @Test
     public void placaIsValid(){
         assertThat(placa.placaIsValid("ABC1234"), is(true));
@@ -30,11 +15,8 @@ public class PlacaTest {
 
     @Test
     public void placaIsNotValid(){
-<<<<<<< HEAD
         assertThat(placa.placaIsValid("ABC4321"), is(false));
-=======
-        assertThat(placa.placaIsValid("ABC1235"), is(false));
->>>>>>> 0c7ce685e043eed7ab70a9f393b863cf9d3a9c07
+
     }
 
     @Test
@@ -46,7 +28,6 @@ public class PlacaTest {
     public void getPlacaStatusInactive(){
         assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
     }
-<<<<<<< HEAD
     
     @Test
     public void getTagActive() {
@@ -57,6 +38,5 @@ public class PlacaTest {
     public void getTagStatusInactive(){
         assertThat(placa.getTagStatus("ABC0000"), is(""));
     }
-=======
->>>>>>> 0c7ce685e043eed7ab70a9f393b863cf9d3a9c07
+
 }
