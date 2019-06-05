@@ -8,15 +8,16 @@ public class Placa {
     public Placa() {
     }
 
-    List<Veiculo> veiculos = Arrays.asList(new Veiculo("ABC1234", "Active", "123"), new Veiculo("ABC0000", "Inactive", "") );
+    List<Veiculo> veiculos = Arrays.asList(new Veiculo("ABC1234", "Active", "123"),
+                                           new Veiculo("ABC0000", "Inactive", ""));
 
-    /*public String getPlacas() {
-    	String retorno = "";
-        for(Veiculo v : veiculos) {
-        	retorno += v.getPlaca();
-        }
-        return retorno;
-    }*/
+    public ArrayList<String> getPlacas(){
+        ArrayList<String> listaPlacas = new ArrayList<String>();
+
+        veiculos.forEach(veiculo -> listaPlacas.add(veiculo.getPlaca()));
+
+        return listaPlacas;
+    }
 
     public boolean placaIsValid(String placa){
 
