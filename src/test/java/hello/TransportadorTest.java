@@ -14,4 +14,9 @@ public class TransportadorTest {
     public void getVeiculoByPlaca() {
         assertThat(transportador.getVeiculoByPlaca("ABC1234"), samePropertyValuesAs(veiculo));
     }
+
+    @Test
+    public void getVeiculoByPlacaNotFound(){
+        assertNull(transportador.getVeiculoByPlaca("ABC0000"));
+    }
 }
