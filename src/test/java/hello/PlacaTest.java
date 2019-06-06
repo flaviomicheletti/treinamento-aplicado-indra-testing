@@ -6,21 +6,17 @@ import static org.hamcrest.CoreMatchers.*;
 
 public class PlacaTest {
 
-    private Placa placa = new Placa();
+    private CtrlVeiculo placa = new CtrlVeiculo();
 
     @Test
-    public void listHasPlaca() {
-        assertThat(placa.getPlacas(), hasItem("ABC1234"));
-    }
-
-    @Test
-    public void placaIsValid() {
+    public void placaIsValid(){
         assertThat(placa.placaIsValid("ABC1234"), is(true));
     }
 
     @Test
-    public void placaIsNotValid() {
+    public void placaIsNotValid(){
         assertThat(placa.placaIsValid("ABC4321"), is(false));
+
     }
 
     @Test
@@ -29,17 +25,17 @@ public class PlacaTest {
     }
 
     @Test
-    public void getPlacaStatusInactive() {
+    public void getPlacaStatusInactive(){
         assertThat(placa.getPlacaStatus("ABC0000"), is("Inactive"));
     }
-
+    
     @Test
     public void getTagActive() {
         assertThat(placa.getTagStatus("ABC1234"), is("123"));
     }
 
     @Test
-    public void getTagStatusInactive() {
+    public void getTagStatusInactive(){
         assertThat(placa.getTagStatus("ABC0000"), is(""));
     }
 
