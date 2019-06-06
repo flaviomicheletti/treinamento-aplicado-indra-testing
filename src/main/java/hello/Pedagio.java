@@ -48,6 +48,16 @@ public class Pedagio {
 		this.valorPassagem = valorPassagem;
 	}
 	
+	public double getValorPassagem(String codigoPedagio) {
+		for(Pedagio x : listaPedagios) {
+			if(x.getCodigoPedagio() == codigoPedagio) {
+				return x.getValorPassagem();
+			}
+		}
+		
+		return 0;
+	}
+	
 	
 
 	
